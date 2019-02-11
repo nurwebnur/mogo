@@ -1,0 +1,34 @@
+/* 
+font-family: 'KaushanScript-Regular';
+font-family: 'Roboto-Regular';
+font-family: 'Roboto-LightItalic';
+font-family: 'Montserrat-Regular';
+font-family: 'Montserrat-Bold'; 
+*/
+
+@import url("kaushanscript-regular.css");
+@import url("roboto-regular.css");
+@import url("roboto-lightitalic.css");
+@import url("montserrat-regular.css");
+@import url("montserrat-bold.css");
+
+body {
+    font-family: 'Roboto-Regular';
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: rgb(0, 0, 0);
+    background-color: #003344;
+}
+
+.about_img {
+    margin: 200px auto;
+    width: 600px;
+}
+
+.about_img_box {
+    background: blue;
+    position: relative;
+}
+
+
+

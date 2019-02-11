@@ -1,0 +1,495 @@
+/* 
+font-family: 'KaushanScript-Regular';
+font-family: 'Roboto-Regular';
+font-family: 'Roboto-LightItalic';
+font-family: 'Montserrat-Regular';
+font-family: 'Montserrat-Bold'; 
+*/
+
+@import url("kaushanscript-regular.css");
+@import url("roboto-regular.css");
+@import url("roboto-lightitalic.css");
+@import url("montserrat-regular.css");
+@import url("montserrat-bold.css");
+
+body {
+    font-family: 'Roboto-Regular';
+    font-size: 0.9375rem;
+    color: #999;
+    background-color: #fff;
+}
+
+h3 {
+    font-family: 'Montserrat-Regular';
+    font-size: 0.875rem;
+    color: #333;
+    text-transform: uppercase;
+}
+
+.wrap {
+    max-width: 1200px;
+    margin: 0 auto;
+    /* position: relative; */
+}
+
+#banner {
+    height: 1000px;
+    background: linear-gradient(rgba(243, 129, 129, 0.9), rgba(252, 227, 138, 0.9)), url("../img/banner.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 25px;
+}
+
+#banner .logo a {
+    font-family: 'Montserrat-Bold'; 
+    font-size: 1.875rem;
+    color: #fff;
+}
+
+#banner .logo a:hover {
+    color: #fce38a;
+}
+
+#banner .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+ 
+#banner .menu ul {
+    list-style: none;
+}
+
+#banner .menu ul li {
+    display: inline-block;
+}
+
+#banner .menu ul li:not(:last-child) {
+    margin-right: 55px;
+}
+
+#banner .menu ul li a {
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    color: #fff;
+    position: relative;
+} 
+
+#banner .menu ul li a:hover,
+#banner .menu ul li a.menu_active {
+    color: #fce38a;
+}
+
+#banner .menu ul li a:after {
+    content: "";
+    display: block;
+    height: 3px;
+    width: 100%;
+    background-color: transparent;
+    position: absolute;
+    bottom: -12px;
+}
+
+#banner .menu ul li a.menu_active:after {
+    background-color: #fce38a;
+}
+
+#banner .menu svg {
+    fill: #fff;
+}
+
+#banner .menu svg:hover {
+    fill: #fce38a;
+}
+
+#banner .title {
+    margin-top: 172px;
+}
+
+#banner .title::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #fff;
+    margin: 56px auto 50px;
+}
+
+#banner .title h1 {
+    font-family: 'KaushanScript-Regular';
+    font-size: 4.5rem;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 43px;
+}
+
+#banner .title p {
+    font-size: 9.375rem;
+    color: #fff;
+    text-align: center;
+    font-family: 'Montserrat-Bold'; 
+    line-height: 0.93;
+    text-transform: uppercase;
+}
+
+#banner .title p span {
+    display: block;
+}
+
+#banner .btn {
+    display: block;
+    width: 160px;
+    height: 40px;
+    margin: 0 auto;
+    border: 3px solid #fff;
+    font-family: 'Montserrat-Bold'; 
+    font-size: 0.875rem;
+    line-height: 40px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+}
+
+#banner .btn:hover {
+    color: #fce38a;
+    border-color: #fce38a;
+}
+
+#slider {
+    margin-top: 158px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.slider_box {
+    width: 270px;
+    overflow: hidden;
+}
+
+.slider_line {
+    height: 3px;
+    background: #f7ebc5;
+}
+
+.slider_box.slider_active .slider_line {
+    background: #fff;
+}
+
+.slider_box.slider_active .slider_line div {
+    width: 25%;
+    height: 100%;
+    background: #f38181;
+}
+
+.slider_box.slider_active .slider_text {
+    color: #fff;
+}
+
+.slider_box:hover {
+    cursor: pointer;
+}
+
+.slider_box:hover.slider_active {
+    cursor: initial;
+}
+
+.slider_box:hover .slider_line {
+    background: #fff;
+}
+
+.slider_box:hover .slider_text {
+    color: #fff;
+}
+
+.slider_text {
+    font-family: 'Montserrat-Regular';
+    font-size: 18px;
+    color: #faf3e0;
+    padding-top: 21px;
+}
+
+.slider_text span {
+    font-family: 'Montserrat-Bold';
+    font-size: 24px;
+}
+
+#about {
+    padding: 92px 0 110px;
+}
+
+.head {
+    text-align: center;
+    width: 990px;
+    margin: 0 auto;
+}
+
+.head_text {
+    font-family: 'KaushanScript-Regular';
+    font-size: 1.5rem;
+    color: #333;
+    display: block;
+}
+
+.head_title {
+    font-family: 'Montserrat-Bold';
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #333;
+    margin-top: 18px;
+}
+
+.head_title::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #f38181;
+    margin: 36px auto 43px;
+}
+
+.head_desc {
+    line-height: 1.5;
+}
+
+.about_img {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 100px;
+}
+
+.about_img_box {
+    width: 380px;
+    height: 250px;
+    background-color: #95e1d3;
+    position: relative;
+}
+
+.about_img_box img {
+    width: 100%;
+    transition: 0.3s;
+    display: block;
+}
+
+.about_img_box .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(243, 129, 129, 0.9), rgba(252, 227, 138, 0.9));
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.about_img_box .content_text {
+    position: absolute;
+    font-family: 'Montserrat-Bold';
+    font-size: 18px;
+    color: #fff;
+    text-transform: uppercase;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.about_img_box .content_text::before {
+    content: "";
+    display: block;
+    width: 32px;
+    height: 23px;
+    margin: 5px auto 10px;
+    background: url("../img/users.png") no-repeat center center;
+}
+
+.about_img_box:hover .content {
+    transform: translate(-10px,-10px);
+    opacity: 1;
+}
+
+.about_img_box:hover img {
+    transform: translate(-10px,-10px);
+}
+
+
+
+
+
+#counter {
+    background-color: #95e1d3;
+    padding: 78px 0 88px;
+    position: relative;
+}
+
+#counter ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    /* position: relative; */
+}
+
+#counter ul li {
+    width: 239px;
+}
+
+#counter ul li::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    width: 1px;
+    height: 100%;
+    background-color: #b5eae0;
+}
+
+#counter ul li:last-child::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 230px;
+    width: 1px;
+    height: 100%;
+    background-color: #b5eae0;
+}
+
+#counter span {
+    font-family: 'Montserrat-Bold';
+    font-size: 4.5rem;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+#counter p {
+    font-family: 'Montserrat-Regular';
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    color: #fff;
+    margin-top: 18px;
+}
+
+.line {
+    border-top: 1px solid #e5e5e5;
+    position: relative;
+    top: 146px;
+    width: 100%;
+}
+
+#amazing {
+    padding: 109px 0 46px;
+}
+
+.amazing_block {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    /* align-items: flex-start; */
+}
+
+.amazing_box {
+    display: flex;
+    justify-content: space-around;
+    margin: 23px 0 75px;
+}
+
+.amazing_ico {
+    width: 90px;
+    text-align: center;
+}
+
+.amazing_text {
+    width: 310px;
+}
+
+.amazing_text p {
+    margin-top: 14px;
+    line-height: 1.5;
+}
+
+#design {
+    background: linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)), url("../img/bg_design.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 850px;
+    padding: 110px 0 110px;
+}
+
+#design img {
+    position: relative;
+    left: 334px;
+    top: 4px;
+}
+
+#service {
+    padding: 110px 0 116px;
+}
+
+.service_block {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 92px;
+}
+
+#comment {
+    background-color: #f8f8f8;
+    padding: 63px 0;
+}
+
+.comment_block {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0 63px;
+}
+
+.comment_block img {
+    width: 160px;
+    height: 160px;
+}
+
+.comment_txt p {
+    font-family: 'Roboto-LightItalic';
+    font-size: 1.5rem;
+    line-height: 2.25rem;
+    color: #999;
+    width: 770px;
+    margin-top: 10px;
+}
+
+.comment_txt span::before {
+    content: "";
+    display: inline-block;
+    width: 60px;
+    height: 3px;
+    background-color: #f38181;
+    margin-right: 12px;
+}
+
+.comment_txt span {
+    display: inline-block;
+    margin-top: 16px;
+    font-family: 'KaushanScript-Regular';
+    font-size: 1.5rem;
+    color: #333;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.fill {
+    height: 500px;
+}
