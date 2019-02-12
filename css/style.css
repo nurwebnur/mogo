@@ -465,6 +465,8 @@ h3 {
     height: 3px;
     background-color: #f38181;
     margin-right: 12px;
+    position: relative;
+    top: -3px;
 }
 
 .comment_txt span {
@@ -473,6 +475,125 @@ h3 {
     font-family: 'KaushanScript-Regular';
     font-size: 1.5rem;
     color: #333;
+}
+
+#team {
+    padding: 105px 0 188px;
+}
+
+.team_img {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 92px;
+}
+
+.team_img_box {
+    width: 380px;
+    height: 470px;
+    background-color: #95e1d3;
+    position: relative;
+    text-align: center;
+}
+
+.team_img_box img {
+    width: 100%;
+    transition: 0.3s;
+    display: block;
+}
+
+.team_img_box .team_socials {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(243, 129, 129, 0.9), rgba(252, 227, 138, 0.9));
+    opacity: 0;
+    transition: 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.team_img_box .team_socials::after {
+    content: '';
+    display: block;
+
+}
+
+.team_img_box .team_socials_box {
+    /* position: absolute; */
+    font-family: 'Montserrat-Bold';
+    font-size: 18px;
+    color: #fff;
+    text-transform: uppercase;
+    width: 56px;
+    height: 56px;
+    background: #fce38a;
+    /* top: 50%;
+    left: 50%; */
+    /* transform: translate(-50%,-50%); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+}
+
+.team_img_box .team_socials_box:not(:last-child) {
+    border-right: 1px solid #f9bd87;
+}
+
+.team_img_box .team_socials_box:hover {
+    background: #f38181;
+    border-right: 1px solid #f38181;
+}
+
+.team_img_box .team_socials_box svg {
+    fill: #f38181;
+}
+
+.team_img_box .team_socials_box:hover svg {
+    fill: #fff;
+}
+
+/* .team_img_box .team_content_text::before {
+    content: "";
+    display: block;
+    width: 32px;
+    height: 23px;
+    margin: 5px auto 10px;
+} */
+
+.team_img_box:hover .team_socials {
+    transform: translate(-10px,-10px);
+    opacity: 1;
+}
+
+.team_img_box:hover img {
+    transform: translate(-10px,-10px);
+}
+
+.team_img_box .team_txt {
+    font-family: 'Montserrat-Regular';
+    font-size: 0.875rem;
+    color: #333;
+    text-transform: uppercase;
+    margin-top: 29px;
+}
+
+.team_img_box .team_txt p {
+    font-family: 'Roboto-LightItalic';
+    font-size: 0.9375rem;
+    line-height: 1.5rem;
+    color: #999;
+    text-transform: initial;
+    margin-top: 10px;
+}
+
+#brands {
+    background-color: #f8f8f8;
+    padding: 62px 0;
+    text-align: center;
 }
 
 
