@@ -182,9 +182,20 @@ h3 {
 }
 
 .slider_box.slider_active .slider_line div {
-    width: 25%;
+    /* width: 0%; */
     height: 100%;
     background: #f38181;
+    animation: animate_line 2s linear;
+}
+
+@keyframes animate_line {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 100%;
+    }
 }
 
 .slider_box.slider_active .slider_text {
@@ -352,7 +363,7 @@ h3 {
     display: block;
     position: absolute;
     top: 0;
-    right: 230px;
+    right: 75px;
     width: 1px;
     height: 100%;
     background-color: #b5eae0;
@@ -430,13 +441,17 @@ h3 {
 }
 
 #service {
-    padding: 110px 0 116px;
+    padding: 110px 0 109px;
 }
 
 .service_block {
     display: flex;
     justify-content: space-between;
     margin-top: 92px;
+}
+
+.service_block img {
+    height: 380px;
 }
 
 #service + #comment {
